@@ -1,0 +1,22 @@
+{
+    "projectType": "library",
+    "sourceRoot": "libs/play/src",
+    "prefix": "frontend",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/play"],
+            "options": {
+                "jestConfig": "libs/play/jest.config.ts",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/play/**/*.ts", "libs/play/**/*.html"]
+            }
+        }
+    },
+    "tags": []
+}

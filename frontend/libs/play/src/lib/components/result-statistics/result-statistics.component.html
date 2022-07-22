@@ -1,0 +1,7 @@
+<ng-container *ngIf="subs$ |async"></ng-container>
+<div class="mb-2" *ngIf="totalCount">
+    <h5 class="text-center">Play Results</h5>
+    <progressbar [value]="winCount" [max]="totalCount" type="success">
+        <strong>{{winCount + '/' + totalCount}}</strong>
+    </progressbar>
+</div>

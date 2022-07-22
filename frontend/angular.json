@@ -1,0 +1,10 @@
+{
+    "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+        "core": "libs/core",
+        "game": "apps/game",
+        "game-e2e": "apps/game-e2e",
+        "play": "libs/play"
+    }
+}

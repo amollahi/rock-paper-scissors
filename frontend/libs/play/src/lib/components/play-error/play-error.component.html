@@ -1,0 +1,14 @@
+<ng-container *ngIf="error$|async"></ng-container>
+
+<div *ngIf="alerts?.length" class="container">
+
+    <div *ngFor="let alert of alerts">
+        <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout">
+            <strong>ERROR(feature:'Play'):</strong>
+            {{ alert.msg }}
+        </alert>
+    </div>
+</div>
+
+
+

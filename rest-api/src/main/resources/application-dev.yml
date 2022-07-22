@@ -1,0 +1,12 @@
+
+
+
+#debug: true
+
+
+
+logging:
+  level:
+    ROOT: DEBUG
+    es.amolla: DEBUG
+
